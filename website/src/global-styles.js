@@ -4,6 +4,15 @@ import { Global, css } from '@emotion/core';
 import theme from './theme';
 
 const globalStyles = css`
+  html {
+    scroll-behavior: smooth;
+  }
+  @media screen and (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
   * {
     box-sizing: border-box;
   }
